@@ -25,7 +25,6 @@ Available options:
 	-u - Use Unix timestamps instead of date/time
 	-c - Print data in CVS format
 	-v - Don't print data units
-
 ```
 
 ##### CVS output example:
