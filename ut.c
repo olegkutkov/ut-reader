@@ -41,7 +41,7 @@ void show_help(const char *pname)
 	printf("Usage:\n");
 	printf("\t-d <device> - Set serial device\n");
 	printf("\t-b <baud> - Set baud rate, default is %d\n", DEFAULT_BAUD_RATE);
-	printf("\t-f <format> - Set custom date format, default is %%Y/%%m/%%d %%H:%%M:%%S\n");
+	printf("\t-f <format> - Set custom date format, default is %%Y-%%m-%%d %%H:%%M:%%S\n");
 	printf("\t-u - Use Unix timestamps instead of date/time\n");
 	printf("\t-c - Print data in CVS format\n");
 	printf("\t-v - Don't print data units\n");

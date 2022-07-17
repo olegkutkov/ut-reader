@@ -50,7 +50,7 @@
 static int use_unix_time = 0;	/* Don't use unixtime by default */
 static int use_csv_format = 0;	/* Use tab delimeter by default */
 static int print_units = 1;		/* Display measurements units by default */
-static char date_format[42] = "%Y/%m/%d %H:%M:%S"; /* Default timestamp format */
+static char date_format[42] = "%Y-%m-%d %H:%M:%S"; /* Default timestamp format */
 
 /* */
 
