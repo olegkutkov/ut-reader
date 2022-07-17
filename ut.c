@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
 	/* Set Ctrl-C signal handler */
 	signal(SIGINT, handle_signal);
 
-	printf("Starting capture, press Ctrl-C to stop\n");
+	printf("# Starting capture, press Ctrl-C to stop\n");
 
 	/* Start data poller with parser cb */
 	int ret = start_data_polling(fd, get_data_buf_size(), data_parse_and_print);
@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 
 	close_serial_dev(fd);
 
-	printf("\nCapture finished\n");
+	printf("\n# Capture finished\n");
 
 	return 0;
 }

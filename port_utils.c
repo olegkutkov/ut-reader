@@ -113,7 +113,8 @@ int open_serial_dev(const char* dev, uint32_t baud, int non_block)
 		return -errno;
 	}
 
-	printf("Serial device %s with baud rate = %d\n", dev, baud);
+	/* We really don't need this in the STDOUT */
+	fprintf(stderr, "Serial device %s with baud rate = %d\n", dev, baud);
 
 	serial_fd = open(dev, O_RDONLY | O_NOCTTY | O_NDELAY);
 
