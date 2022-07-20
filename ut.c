@@ -109,6 +109,8 @@ int main(int argc, char *argv[])
 	/* Set Ctrl-C signal handler */
 	signal(SIGINT, handle_signal);
 
+	setbuf(stdout, NULL);
+
 	printf("# Starting capture, press Ctrl-C to stop\n");
 
 	/* Start data poller with parser cb */
